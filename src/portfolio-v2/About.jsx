@@ -1,4 +1,5 @@
 import style from './stylefile/About.module.css'
+import { getImageUrl } from './utils';
 import { SiAffinitydesigner } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import { FaServer } from "react-icons/fa";
