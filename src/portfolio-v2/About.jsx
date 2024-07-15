@@ -10,7 +10,7 @@ export default function About() {
       <h2 style={{ paddingTop: "20px" }}> <center>About</center>      </h2>
       <div className={style.mainBox}>
 
-        <img className={style.aboutImage} src='../../assets/about.jpg' />
+        <img className={style.aboutImage} src={`${getImageUrl('about.jpg')}`}  />
         <div className={style.aboutCards}>
 
           <div className={style.card}>
