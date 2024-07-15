@@ -1,4 +1,5 @@
 import style from './stylefile/Experience.module.css'
+import { getImageUrl } from './utils'
 export default function Experience() {
 
   return <>
@@ -7,7 +8,7 @@ export default function Experience() {
       <div className={style.expMainBox}>
 
         <div className={style.logo}>
-          <img src="../../assets/exp.png" alt="Skills" />
+          <img src={`${getImageUrl('exp.png')}`} alt="Skills" />
         </div>
 
         <div className={style.cards}>
