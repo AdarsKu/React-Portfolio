@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(180deg, rgb(6, 42, 59) 0%, rgb(13, 15, 8) 100%)
+}
+
+.content {
+  width: 80%;
+  height: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.info {
+  width: 50%;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 10%;
+}
+
+
+.socialLink {
+  width: 50%;
+  padding-top: 10%;
+}
+
+.link {
+  padding: 3%;
+  margin: 2%;
+}
+
+@media(max-width:600px) {
+  .content {
+    flex-direction: column;
+    padding: 8%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 5%;
+    width: 100%;
+  }
+
+  .socialLink {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+}

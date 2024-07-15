@@ -1,0 +1,96 @@
+@import url('./variabales.css');
+
+* {
+  color: var(--color-text);
+}
+
+.aboutMain {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(9, 37, 57, 0.978) 0%, rgb(14, 12, 30) 100%);
+}
+
+.mainBox {
+  position: absolute;
+  height: 85vh;
+  width: 80%;
+  margin: 10%;
+  margin-top: 10px;
+  border-radius: 10%;
+  min-width: 200px;
+  background-color: rgb(1, 1, 11);
+  display: flex;
+  flex-direction: row;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: steps();
+}
+
+.mainBox:hover {
+  box-shadow: 5px 0 5px rgb(252, 252, 252), -.7em 0 .4em rgb(19, 68, 111);
+}
+
+.aboutImage {
+  width: 50%;
+  border-radius: 10%;
+  padding: 0;
+}
+
+.aboutCards {
+  width: 50%;
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  height: 20%;
+  width: 90%;
+  margin: 4px;
+  background-color: rgb(25, 25, 23);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.card:hover {
+  margin: 5%;
+  padding: 1%;
+  background: linear-gradient(-90deg, black 50%, rgb(53, 15, 15) 100%);
+
+  box-shadow: 2px 0 2px rgb(45, 15, 15), -.7em 0 .4em rgb(82, 20, 20);
+}
+
+@media (max-width:600px) {
+  .mainBox {
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+
+  .aboutImage {
+    width: 100px;
+    margin: 2px;
+  }
+
+  .aboutCards {
+    width: 90%;
+    margin: 2px;
+    margin-top: 20px;
+    height: fit-content;
+  }
+
+
+  .card {
+    height: 100px;
+    width: 90%;
+    margin: 4px;
+    padding: 0;
+    background-color: rgb(25, 25, 23);
+  }
+}

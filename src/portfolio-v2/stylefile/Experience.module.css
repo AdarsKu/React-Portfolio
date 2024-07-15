@@ -1,0 +1,131 @@
+.expMain {
+  padding-top: 3%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg,
+      rgba(9, 37, 57, 0.978) 0%, rgb(14, 12, 30) 100%);
+
+}
+
+.expMainBox {
+  margin-top: 1%;
+  border-radius: 10%;
+  margin-left: 10%;
+  width: 80%;
+  height: 80vh;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: steps();
+
+}
+
+
+.expMainBox:hover {
+  box-shadow: 5px 0 5px rgb(252, 252, 252), -.7em 0 .4em rgb(19, 68, 111);
+}
+
+.logo {
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  padding: 2%;
+  width: 50%;
+  height: 100%;
+  align-content: center;
+
+  img {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+.cards {
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 90%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  margin-top: 4%;
+  height: fit-content;
+  padding: 2%;
+  background: linear-gradient(-90deg, black 50%, rgb(41, 40, 40) 100%);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+  margin: 2%;
+  padding: 1%;
+  background: linear-gradient(-90deg, black 50%, rgb(53, 15, 15) 100%);
+
+}
+
+.card:nth-child(1) {
+  margin-top: 15%;
+}
+
+
+@media(max-width:600px) {
+  .expMain {
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+
+  .expMainBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 99%;
+    margin-bottom: 5px;
+  }
+
+
+  .logo {
+    margin-left: 0;
+    border-radius: 0;
+    height: 50%;
+    width: 90%;
+
+    img {
+
+      width:
+        100%;
+      min-width: 300px;
+    }
+  }
+
+  .cards {
+    width: 100%;
+    border-radius: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 80%;
+    min-width: 300px;
+    height: fit-content;
+    margin: 5px;
+  }
+
+  .card:nth-child(1) {
+    margin-top: 20px;
+  }
+
+  .card:nth-child(3) {
+    margin-bottom: 20px;
+  }
+}
